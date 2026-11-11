@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rasya's Storybook</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a class="logo" href="#">Rasya's <span>Storybook.</span></a>
+  <button id="savedButton">♡ Tersimpan</button>
+</header>
+
+<section class="hero">
+  <p class="small-title">WELCOME TO MY DIGITAL LIBRARY</p>
+  <h1>Every Story Has<br><i>Its Own Magic.</i></h1>
+  <p>Temukan kisah, rasakan cerita, dan jelajahi dunia melalui setiap halaman.</p>
+  <a href="#library" class="hero-button">Jelajahi Cerita ↗</a>
+</section>
+
+<main id="library">
+  <div class="heading">
+    <div>
+      <p class="small-title">OUR COLLECTION</p>
+      <h2>Rak Cerita Pilihan</h2>
+    </div>
+    <span id="total">05 STORIES</span>
+  </div>
+
+  <input type="search" id="search" placeholder="Cari cerita favoritmu...">
+
+  <div class="filters">
+    <button class="active" data-category="Semua">Semua</button>
+    <button data-category="Horor">Horor</button>
+    <button data-category="Kehidupan">Kehidupan</button>
+    <button data-category="Kehilangan">Kehilangan</button>
+    <button data-category="Perjalanan">Perjalanan</button>
+    <button data-category="Misteri">Misteri</button>
+  </div>
+
+  <div id="bookList" class="book-grid"></div>
+  <p id="empty" hidden>Belum ada cerita yang ditemukan.</p>
+</main>
+
+<footer>
+  <h3>Rasya's Storybook</h3>
+  <p>A little library, endless imagination.</p>
+  <small>© 2026 Rasya's Storybook</small>
+</footer>
+
+<div id="reader" class="reader">
+  <div class="reader-content">
+    <button id="closeReader" class="close">×</button>
+    <p id="category"></p>
+    <h2 id="storyTitle"></h2>
+    <p id="subtitle"></p>
+    <button id="saveStory" class="save">♡ Simpan Cerita</button>
+    <div id="storyText"></div>
+    <p class="ending">✦ Terima kasih sudah membaca ✦</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
